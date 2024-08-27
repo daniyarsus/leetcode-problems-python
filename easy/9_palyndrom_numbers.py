@@ -1,0 +1,6 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x % 2 == 0:
+            first_slice = ...
+        else:
+            result = ...
