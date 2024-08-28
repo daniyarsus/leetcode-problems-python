@@ -1,21 +1,23 @@
-# 10, 5, 7, 16, 13, 2, 20
-
 class Node:
-    def __init__(self, data) -> None:
-        self.data = data
-        self.left = self.right = None
+    def __init__(self, value) -> None:
+        self.value = value
+        self.left = None
+        self.right = None
 
 
-class Tree:
-    def __init__(self) -> None:
-        self.root = None
+def preorder(root):
+    if root:
+        print(root.value)
+        preorder(root.left)
+        preorder(root.right)
 
-    def __find(self, node, parent, value):
-        pass
 
-    def append(self, obj):
-        if self.root is None:
-            self.root = obj
-            return obj
 
-        s, p, fl_find = self.__find(self.root, None, obj)
+tree = Node(1)
+tree.left = Node(2)
+tree.right = Node(3)
+
+tree.left.left = Node(4)
+tree.left.right = Node(5)
+
+preorder(tree)
