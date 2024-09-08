@@ -19,5 +19,6 @@ tree.right = Node(3)
 
 tree.left.left = Node(4)
 tree.left.right = Node(5)
+tree.left.right.left = Node(6)
 
 preorder(tree)

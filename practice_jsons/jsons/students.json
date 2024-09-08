@@ -1,0 +1,14 @@
+{
+  "student_id": "38213",
+  "student_email": "38213@iitu.edu.kz",
+  "lessons": {
+    "math": {
+      "gpa": 3.1,
+      "quantity": 15
+    },
+    "kazakh": {
+      "gpa": 2.5,
+      "quantity": 15
+    }
+  }
+}
