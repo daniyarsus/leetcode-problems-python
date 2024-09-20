@@ -1,13 +1,19 @@
-# Input: nums = [2,7,11,15], target = 9
-# Output: [0,1]
+from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
-        for i in range(len(nums)-1):
-            if nums[i] + nums[i+1] == target:
-                return [i, i+1]
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        return sum_(nums, target)
+
+
+def sum_(nums: List[int], target: int, n: int = 0, result: List[int] = None) -> List[int]:
+    if n >= len(nums):
+        return result
+
+    result.append(nums[n])
+
+    return sum_(nums, target, n + 1, result)
 
 
 solution = Solution()
-print(solution.twoSum(nums=[2,7,11,15], target=26))
+print(solution.twoSum([2, 7, 11, 15], 9))

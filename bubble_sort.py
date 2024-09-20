@@ -10,4 +10,4 @@ def bubble_sort(array: list[int]) -> list[int]:
             array[i], array[i+1] = array[i+1], array[i]
     print(array)
 
-bubble_sort(array=[1, 4, 3, 6, 4, 7])
+bubble_sort(array=[1, 4, 3, 6, 1233, 7])
