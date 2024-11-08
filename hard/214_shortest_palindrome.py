@@ -1,3 +1,5 @@
+from abc import abstractmethod, ABC
+
 class Solution:
     def shortestPalindrome(self, s: str) -> str:
         ...

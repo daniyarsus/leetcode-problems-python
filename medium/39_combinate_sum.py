@@ -30,4 +30,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.combinationSum([2, 3, 6, 7, 1], 7))
+    print(solution.combinationSum([2, 3, 6, 7, 1], 9))

@@ -13,7 +13,7 @@ class HashMap:
         self.size = size
         self.hash_map = [None] * self.size
 
-    def _get_hash(
+    def get_hash(
             self,
             key: int | float | str
     ) -> hash:
@@ -26,7 +26,7 @@ class HashMap:
             key: int | float | str,
             value: Any
     ) -> None:
-        key_hash = self._get_hash(key)
+        key_hash = self.get_hash(key)
         key_value = [key, value]
 
         if self.hash_map[key_hash] is None:
@@ -41,3 +41,4 @@ class HashMap:
 
 hash_map = HashMap()
 hash_map.add(key=1, value=2)
+print(hash_map.size)
